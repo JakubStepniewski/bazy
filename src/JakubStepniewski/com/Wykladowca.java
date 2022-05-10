@@ -5,18 +5,19 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Wykladowca {
-   public void GenerateWykladowca() throws IOException {
+   public void GenerateWykladowca(int records) throws IOException {
        String Insert = "INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (";
        RandomData randomData = new RandomData();
+       randomData.init();
        String Imie;
        String Nazwisko;
        String Stopien;
 
-       File file = new File("src/data/test.txt");
+       File file = new File("src/data/wykladowca.txt");
        PrintWriter writer = new PrintWriter(file);
-       writer. print("");
+       writer.print("");
 
-       for(int i = 0; i<100; i++){
+       for(int i = 0; i < records; i++){
            if(randomData.RandomNumber(1,2) == 1){
                Imie = randomData.randImieMeskie();
                Nazwisko = randomData.randNazwiskoMeskie();

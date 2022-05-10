@@ -5,9 +5,22 @@ import java.io.IOException;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        Wykladowca wykladowca = new Wykladowca();
+        /*
+        RandomData randomData = new RandomData();
 
-        wykladowca.GenerateWykladowca();
+        randomData.init();
+
+        String Imie = randomData.randImieMeskie();
+        String Nazwisko = randomData.randNazwiskoMeskie();
+        System.out.println(Imie + " " + Nazwisko);
+
+         */
+
+
+        Wykladowca wykladowca = new Wykladowca();
+        wykladowca.GenerateWykladowca(100);
+
+
 
     }
 }

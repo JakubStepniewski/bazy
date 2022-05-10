@@ -1,10 +1,9 @@
 package JakubStepniewski.com;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class RandomData {
@@ -15,146 +14,131 @@ public class RandomData {
     private int sum;
     private Random random = new Random();
     private int range;
-    private String source;
-    private List<Data> ImieMeskie;
+    private ArrayList<Data> imionaMeskie = new ArrayList<>();
+    private ArrayList<Data> nazwiskaMeskie = new ArrayList<>();
+    private ArrayList<Data> imionaZenskie = new ArrayList<>();
+    private ArrayList<Data> nazwiskaZenskie = new ArrayList<>();
 
-    /*
+
     public void init() throws IOException {
 
         FileReader File = new FileReader("src/data/ImionaMeskie.csv");
         BufferedReader buffer = new BufferedReader(File);
-        while((line = buffer.readLine()) != null) {
+        while ((line = buffer.readLine()) != null) {
             part = line.split(",");
-            ImieMeskie.add(part[0];Integer.parseInt(part[2]))
+            Data data = new Data();
+            data.setNazwa(part[0]);
+            data.setLiczba(Integer.parseInt(part[2]));
+            imionaMeskie.add(data);
         }
 
+        File = new FileReader("src/data/ImionaZenskie.csv");
+        buffer = new BufferedReader(File);
+        while ((line = buffer.readLine()) != null) {
+            part = line.split(",");
+            Data data = new Data();
+            data.setNazwa(part[0]);
+            data.setLiczba(Integer.parseInt(part[2]));
+            imionaZenskie.add(data);
+        }
+
+        File = new FileReader("src/data/NazwiskaMeskie.csv");
+        buffer = new BufferedReader(File);
+        while ((line = buffer.readLine()) != null) {
+            part = line.split(",");
+            Data data = new Data();
+            data.setNazwa(part[0]);
+            data.setLiczba(Integer.parseInt(part[1]));
+            nazwiskaMeskie.add(data);
+        }
+
+        File = new FileReader("src/data/NazwiskaZenskie.csv");
+        buffer = new BufferedReader(File);
+        while ((line = buffer.readLine()) != null) {
+            part = line.split(",");
+            Data data = new Data();
+            data.setNazwa(part[0]);
+            data.setLiczba(Integer.parseInt(part[1]));
+            nazwiskaZenskie.add(data);
+        }
     }
 
-     */
-    public String randImieMeskie() throws IOException {
-
+    public String randImieMeskie(){
+        range = 0;
         sum = 0;
-        source = "src/data/ImionaMeskie.csv";
-        File = new FileReader(source);
-        BufferedReader buffer = new BufferedReader(File);
+        for(int i = 0 ; i < imionaMeskie.size() ; i++){
+            range += imionaMeskie.get(i).getLiczba();
+        }
 
-        int range = setRange(2);
+        int choice = random.nextInt(range);
 
-        int choice = random.nextInt(range-1) + 1;
-
-        while((line = buffer.readLine()) != null){
-
-            part = line.split(",");
-            sum += Integer.parseInt(part[2]);
-
-            if(sum>choice){
-                break;
+        for(int i = 0 ; i < imionaMeskie.size() ; i++){
+            sum += imionaMeskie.get(i).getLiczba();
+            if(choice < sum){
+                return imionaMeskie.get(i).getNazwa();
             }
         }
 
-        File.close();
-
-        return part[0].charAt(0) + part[0].substring(1).toLowerCase();
+        return "Błąd";
     }
 
-    public String randNazwiskoMeskie() throws IOException {
-
+    public String randImieZenskie(){
+        range = 0;
         sum = 0;
-        source = "src/data/NazwiskaMeskie.csv";
-        File = new FileReader(source);
-        BufferedReader buffer = new BufferedReader(File);
+        for(int i = 0 ; i < imionaZenskie.size() ; i++){
+            range += imionaZenskie.get(i).getLiczba();
+        }
 
-        Random random = new Random();
+        int choice = random.nextInt(range);
 
-        range=setRange(1);
-
-        int choice = random.nextInt(range-1) + 1;
-
-        while((line = buffer.readLine()) != null){
-
-            part = line.split(",");
-            sum += Integer.parseInt(part[1]);
-
-            if(sum>choice){
-
-                break;
+        for(int i = 0 ; i < imionaZenskie.size() ; i++){
+            sum += imionaZenskie.get(i).getLiczba();
+            if(choice < sum){
+                return imionaZenskie.get(i).getNazwa();
             }
         }
 
-        File.close();
-
-        return part[0].charAt(0) + part[0].substring(1).toLowerCase();
+        return "Błąd";
     }
 
-    public int setRange(int charAt) throws IOException {
-        int range = 0;
-
-        File = new FileReader(source);
-        BufferedReader buffer = new BufferedReader(File);
-
-        while((line = buffer.readLine()) != null){
-
-            part = line.split(",");
-            range += Integer.parseInt(part[charAt]);
+    public String randNazwiskoMeskie(){
+        range = 0;
+        sum = 0;
+        for(int i = 0 ; i < nazwiskaMeskie.size() ; i++){
+            range += nazwiskaMeskie.get(i).getLiczba();
         }
 
-        return range;
-    }
+        int choice = random.nextInt(range);
 
-    public String randImieZenskie() throws IOException {
-
-        sum = 0;
-        source = "src/data/ImionaZenskie.csv";
-        File = new FileReader(source);
-        BufferedReader buffer = new BufferedReader(File);
-
-        int range = setRange(2);
-
-        int choice = random.nextInt(range-1) + 1;
-
-        while((line = buffer.readLine()) != null){
-
-            part = line.split(",");
-            sum += Integer.parseInt(part[2]);
-
-            if(sum>choice){
-                break;
+        for(int i = 0 ; i < nazwiskaMeskie.size() ; i++){
+            sum += nazwiskaMeskie.get(i).getLiczba();
+            if(choice < sum){
+                return nazwiskaMeskie.get(i).getNazwa();
             }
         }
 
-        File.close();
-
-        return part[0].charAt(0) + part[0].substring(1).toLowerCase();
+        return "Błąd";
     }
 
-    public String randNazwiskoZenskie() throws IOException {
-
+    public String randNazwiskoZenskie(){
+        range = 0;
         sum = 0;
-        source = "src/data/NazwiskaZenskie.csv";
-        File = new FileReader(source);
-        BufferedReader buffer = new BufferedReader(File);
+        for(int i = 0 ; i < nazwiskaZenskie.size() ; i++){
+            range += nazwiskaZenskie.get(i).getLiczba();
+        }
 
-        Random random = new Random();
+        int choice = random.nextInt(range);
 
-        range=setRange(1);
-
-        int choice = random.nextInt(range-1) + 1;
-
-        while((line = buffer.readLine()) != null){
-
-            part = line.split(",");
-            sum += Integer.parseInt(part[1]);
-
-            if(sum>choice){
-
-                break;
+        for(int i = 0 ; i < nazwiskaZenskie.size() ; i++){
+            sum += nazwiskaZenskie.get(i).getLiczba();
+            if(choice < sum){
+                return nazwiskaZenskie.get(i).getNazwa();
             }
         }
 
-        File.close();
-
-        return part[0].charAt(0) + part[0].substring(1).toLowerCase();
+        return "Błąd";
     }
+
 
     public int RandomNumber(int beginning, int end){
         return random.nextInt(beginning,end+1);
