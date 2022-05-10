@@ -18,7 +18,16 @@ public class Main {
 
 
         Wykladowca wykladowca = new Wykladowca();
-        wykladowca.GenerateWykladowca(100);
+        wykladowca.generateWykladowca(100);
+
+        Student student = new Student();
+        student.generateStudent(100);
+
+        Zaliczenie zaliczenie = new Zaliczenie();
+        zaliczenie.generateZaliczenie(100);
+
+        Przedmiot przedmiot = new Przedmiot();
+        przedmiot.generatePrzedmiot(100);
 
 
 

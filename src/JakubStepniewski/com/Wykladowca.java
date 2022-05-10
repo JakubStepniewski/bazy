@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Wykladowca {
-   public void GenerateWykladowca(int records) throws IOException {
+   public void generateWykladowca(int records) throws IOException {
        String Insert = "INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (";
        RandomData randomData = new RandomData();
        randomData.init();
