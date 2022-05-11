@@ -12,9 +12,11 @@ public class Zaliczenie {
         int nr_albumu;
         int nr_wykladowcy;
         int termin;
-        String data = "Date '2017-12-23'";
+        String data = "2017-12-23";
         int ocena;
         int j = 0;
+        int marked = 0;
+        String Wynik;
 
         File file = new File("src/data/zaliczenie.txt");
         PrintWriter writer = new PrintWriter(file);
@@ -22,35 +24,37 @@ public class Zaliczenie {
         for(int i = 0; i < records; ) {
 
             Id_przedmiotu = randomData.RandomNumber(0,29);
-            nr_albumu = i;
-            nr_wykladowcy = i;
+            nr_albumu = j;
+            nr_wykladowcy = Id_przedmiotu;
             ocena = randomData.RandomNumber(2,5);
+            marked = 0;
 
 
-            if(ocena > 2) {
-                termin = 1;
-                String Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", "+ data + ", "+ ocena + ");\n";
-                i++;
-                writer.print(Wynik);
-            }else {
+            termin = 1;
+            Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", Date '"+ data + "', "+ ocena + ");\n";
+            i++;
+            writer.print(Wynik);
+
+
+            if(ocena < 3) {
                 ocena = randomData.RandomNumber(2,5);
-            }
-
-            if(ocena > 2) {
                 termin = 2;
-                String Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", "+ data + ", "+ ocena + ");\n";
+                Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", Date '"+ data + "', "+ ocena + ");\n";
                 i++;
                 writer.print(Wynik);
-            }else {
-                ocena = randomData.RandomNumber(2,5);
             }
 
-            if(ocena > 2) {
+            if(ocena < 3) {
+                ocena = randomData.RandomNumber(2,5);
                 termin = 3;
-                String Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", "+ data + ", "+ ocena + ");\n";
+                Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", Date '"+ data + "', "+ ocena + ");\n";
                 i++;
                 writer.print(Wynik);
             }
+
+
+
+            j++;
 
 
 
