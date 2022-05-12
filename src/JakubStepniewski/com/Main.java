@@ -24,10 +24,10 @@ public class Main {
         student.generateStudent(100);
 
         Zaliczenie zaliczenie = new Zaliczenie();
-        zaliczenie.generateZaliczenie(100);
+        zaliczenie.generateZaliczenie(100,29);
 
         Przedmiot przedmiot = new Przedmiot();
-        przedmiot.generatePrzedmiot(100);
+        przedmiot.generatePrzedmiot();
 
 
 

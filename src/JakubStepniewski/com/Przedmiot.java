@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Przedmiot {
-    public void generatePrzedmiot(int records) throws IOException {
+    public void generatePrzedmiot() throws IOException {
         String Insert = "INSERT INTO przedmiot VALUES (";
         RandomData randomData = new RandomData();
         randomData.init();
