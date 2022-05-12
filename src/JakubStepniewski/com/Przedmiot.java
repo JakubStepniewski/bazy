@@ -12,7 +12,7 @@ public class Przedmiot {
         RandomData randomData = new RandomData();
         randomData.init();
 
-        File file = new File("src/data/przedmiot.txt");
+        File file = new File("src/data/przedmiot.csv");
         PrintWriter writer = new PrintWriter(file);
         writer.print("");
 
@@ -22,14 +22,14 @@ public class Przedmiot {
 
         List<String> nazwyPrzedmiotow = new ArrayList<>();
 
-        nazwyPrzedmiotow.add("Polski");
+        nazwyPrzedmiotow.add("Historia muzyki");
         nazwyPrzedmiotow.add("Matematyka");
         nazwyPrzedmiotow.add("Fizyka");
         nazwyPrzedmiotow.add("Programowanie w c++");
         nazwyPrzedmiotow.add("Programowanie w c");
         nazwyPrzedmiotow.add("Programowanie obiektowe");
-        nazwyPrzedmiotow.add("Bazy dancyh 1");
-        nazwyPrzedmiotow.add("Bazy danych 2");
+        nazwyPrzedmiotow.add("Bazy dancyh");
+        nazwyPrzedmiotow.add("Systemy operacyjne");
         nazwyPrzedmiotow.add("Sieci");
         nazwyPrzedmiotow.add("Algorytmy");
 
@@ -37,15 +37,15 @@ public class Przedmiot {
         for(int i = 0; i < nazwyPrzedmiotow.size(); i++) {
             nazwa = nazwyPrzedmiotow.get(i);
             typ = "laboratorium";
-            Wynik = Insert + j + ", '" + nazwa + "', '" + typ +"');\n";
+            Wynik = j + "," + nazwa + "," + typ +"\n";
             j++;
             writer.print(Wynik);
             typ = "ćwiczenia";
-            Wynik = Insert + j + ", '" + nazwa + "', '" + typ +"');\n";
+            Wynik = j + "," + nazwa + "," + typ +"\n";
             j++;
             writer.print(Wynik);
             typ = "wykład";
-            Wynik = Insert + j + ", '" + nazwa + "', '" + typ +"');\n";
+            Wynik = j + "," + nazwa + "," + typ +"\n";
             j++;
             writer.print(Wynik);
         }

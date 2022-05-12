@@ -41,45 +41,45 @@ public class Zaliczenie {
 
 
 
-        File file = new File("src/data/zaliczenie.txt");
+        File file = new File("src/data/zaliczenie.csv");
         PrintWriter writer = new PrintWriter(file);
         writer.print("");
         for(int j = 0; j < records; ) {
 
-            Id_przedmiotu = randomData.RandomNumber(0,maxIdPrzedmiotu);
+            //Id_przedmiotu = randomData.RandomNumber(0,maxIdPrzedmiotu);
+            Id_przedmiotu = 0;
             nr_albumu = j;
             nr_wykladowcy = Id_przedmiotu;
-            ocena = randomData.RandomNumber(2,5);
 
 
-            termin = 1;
-            Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", Date '"+ daty[Id_przedmiotu][termin-1] + "', "+ ocena + ");\n";
-            i++;
-            writer.print(Wynik);
+            for(Id_przedmiotu = 0;Id_przedmiotu <30;Id_przedmiotu++){
 
-
-            if(ocena < 3) {
                 ocena = randomData.RandomNumber(2,5);
-                termin = 2;
-                Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", Date '"+ daty[Id_przedmiotu][termin-1] + "', "+ ocena + ");\n";
+                termin = 1;
+                Wynik = i + "," + Id_przedmiotu + "," + nr_albumu + "," + nr_wykladowcy + "," + termin + ","+ daty[Id_przedmiotu][termin-1] + ","+ ocena + "\n";
                 i++;
                 writer.print(Wynik);
+
+
+                if(ocena < 3) {
+                    ocena = randomData.RandomNumber(2,5);
+                    termin = 2;
+                    Wynik = i + "," + Id_przedmiotu + "," + nr_albumu + "," + nr_wykladowcy + "," + termin + ","+ daty[Id_przedmiotu][termin-1] + ","+ ocena + "\n";
+                    i++;
+                    writer.print(Wynik);
+                }
+
+                if(ocena < 3) {
+                    ocena = randomData.RandomNumber(2,5);
+                    termin = 3;
+                    Wynik = i + "," + Id_przedmiotu + "," + nr_albumu + "," + nr_wykladowcy + "," + termin + ","+ daty[Id_przedmiotu][termin-1] + ","+ ocena + "\n";
+                    i++;
+                    writer.print(Wynik);
+                }
+
+
             }
-
-            if(ocena < 3) {
-                ocena = randomData.RandomNumber(2,5);
-                termin = 3;
-                Wynik = Insert + i + ", " + Id_przedmiotu + ", " + nr_albumu + ", " + nr_wykladowcy + ", " + termin + ", Date '"+ daty[Id_przedmiotu][termin-1] + "', "+ ocena + ");\n";
-                i++;
-                writer.print(Wynik);
-            }
-
-
-
             j++;
-
-
-
             //System.out.println(Wynik);
 
         }

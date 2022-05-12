@@ -18,13 +18,13 @@ public class Main {
 
 
         Wykladowca wykladowca = new Wykladowca();
-        wykladowca.generateWykladowca(100);
+        wykladowca.generateWykladowca(30);
 
         Student student = new Student();
-        student.generateStudent(100);
+        student.generateStudent(3500);
 
         Zaliczenie zaliczenie = new Zaliczenie();
-        zaliczenie.generateZaliczenie(100,29);
+        zaliczenie.generateZaliczenie(3500,29);
 
         Przedmiot przedmiot = new Przedmiot();
         przedmiot.generatePrzedmiot();

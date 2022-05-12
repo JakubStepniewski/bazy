@@ -14,7 +14,7 @@ public class Student {
         int Wiek;
         int Nr_gr;
 
-        File file = new File("src/data/student.txt");
+        File file = new File("src/data/student.csv");
         PrintWriter writer = new PrintWriter(file);
         writer.print("");
 
@@ -30,7 +30,7 @@ public class Student {
             Wiek = randomData.RandomNumber(18,26);
             Nr_gr = randomData.RandomNumber(0,999);
 
-            String Wynik = Insert + i + ", '" + Imie + "', '" + Nazwisko + "', '" + Wiek + "', " + Nr_gr +");\n";
+            String Wynik = i + "," + Imie + "," + Nazwisko + "," + Wiek + "," + Nr_gr +"\n";
 
             //System.out.println(Wynik);
             writer.print(Wynik);

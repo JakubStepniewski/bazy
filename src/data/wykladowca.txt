@@ -1,100 +1,30 @@
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (0, 'PATRYK', 'SZYSZKOWSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (1, 'JENNIFER', 'PTASIŃSKA', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (2, 'STANISŁAWA', 'FOKSIŃSKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (3, 'ZUZANNA', 'MAZUR', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (4, 'FILIP', 'BRAŃCZKO', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (5, 'KONRAD', 'POLAK', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (6, 'BARBARA', 'ZYGAJ', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (7, 'WŁADYSŁAW', 'KĘDZIA', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (8, 'PIOTR', 'ANTOS', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (9, 'ALEKSANDER', 'MACZYŃSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (10, 'ANDRZEJ', 'KURZELA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (11, 'ZOFIA', 'MADEJ', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (12, 'ARLETA', 'SIUDEK', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (13, 'KAZIMIERZ', 'MAKOŚ', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (14, 'ANDRZEJ', 'SOSZYŃSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (15, 'JAN', 'SIDLETSKYI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (16, 'JULIA', 'BAKOWSKA', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (17, 'STANISŁAW', 'ERMEL', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (18, 'MAŁGORZATA', 'KOTERWA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (19, 'ELŻBIETA', 'SZYDŁAK', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (20, 'GABRIELA', 'SKIBA', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (21, 'ANTONI', 'JUSZKIEWICZ', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (22, 'HELENA', 'GRZĄBA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (23, 'MAGDALENA', 'LEBIEDZIŃSKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (24, 'AGNIESZKA', 'FIKUS', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (25, 'MARIUSZ', 'KOZYRA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (26, 'MAGDALENA', 'BIANKETTI', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (27, 'PAULINA', 'RENCZEWSKA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (28, 'ELIZA', 'KIRKIEWICZ', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (29, 'ROKSANA', 'MATYSIAK', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (30, 'FRANCISZEK', 'GALWAS', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (31, 'KAMILA', 'PACHELSKA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (32, 'PAWEŁ', 'STAWCZYK', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (33, 'SERGEY', 'FALARZ', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (34, 'KAZIMIERZ', 'SIKORSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (35, 'KRYSTIAN', 'PRUDŁO', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (36, 'MARIUSZ', 'PSZON', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (37, 'MARCEL', 'WOŁOWICZ', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (38, 'MARGITA', 'MACIOSZEK', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (39, 'MARCELINO', 'FRANKOWSKI', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (40, 'ZUZANNA', 'KOZACZUK', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (41, 'BARBARA', 'SADOWSKA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (42, 'DANUTA', 'OLESZOWSKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (43, 'JÓZEF', 'HUDEK', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (44, 'WŁODZIMIERZ', 'WIŚNIEWSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (45, 'ALICJA', 'WÓJCIK', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (46, 'NIKODEM', 'KOCZOROWSKI', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (47, 'SONIA', 'MACIUSZONEK', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (48, 'MICHALINA', 'BORZEWSKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (49, 'VERONICA', 'JADCZAK', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (50, 'LESZEK', 'CHODOR', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (51, 'OKSANA', 'BOROWSKA', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (52, 'PRZEMYSŁAW', 'KOCON', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (53, 'ALICJA', 'BRZEMIŃSKA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (54, 'MAGDALENA', 'SZEWCZYK', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (55, 'DAWID', 'SZCZĘSNY', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (56, 'DAMIAN', 'PRZYBYŁOWICZ', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (57, 'IWONA', 'OSIECKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (58, 'JAN', 'JABŁOŃSKI', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (59, 'ROBERT', 'BIELAWSKI', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (60, 'HENRYK', 'RYPNIOWSKI', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (61, 'FILIP', 'BUTRYN', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (62, 'MATEUSZ', 'STEFANOWSKI', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (63, 'URSZULA', 'OLSZA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (64, 'LILIANNA', 'PIECHOWIAK', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (65, 'MAŁGORZATA', 'KWIDZIŃSKA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (66, 'JADWIGA', 'WALKOWIAK', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (67, 'MIROSŁAWA', 'SALICKA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (68, 'EDWARD', 'URBANIAK', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (69, 'JAN', 'WSZEBOROWSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (70, 'ANNA', 'BUSZ', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (71, 'JÓZEF', 'BOGUCKI', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (72, 'PAWEŁ', 'KARCZEWSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (73, 'MARIA', 'MAZUR', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (74, 'ADAM', 'SYKUT', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (75, 'DANUTA', 'WYRZYKOWSKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (76, 'PAWEŁ', 'JAKUBIEC', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (77, 'KAROLINA', 'TOKARCZYK', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (78, 'VICTORIA', 'LAŚKIEWICZ', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (79, 'ZOFIA', 'SZEWCZYK', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (80, 'JANINA', 'NOWAKOWSKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (81, 'JACEK', 'SYKUS', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (82, 'DANIEL', 'SPRYSAK', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (83, 'PAULINA', 'MAJEWSKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (84, 'KATARZYNA', 'NASIEROWSKA', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (85, 'DOMINIKA', 'RUBAJCZYK', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (86, 'OLGIERD', 'SIKORSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (87, 'ANNA', 'PTAŚ', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (88, 'YEVHENII', 'KANIGOWSKI', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (89, 'KATARZYNA', 'SUDOŁ', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (90, 'AGNIESZKA', 'ŚLIWIŃSKA', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (91, 'PAULINA', 'BANCEWICZ', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (92, 'WIOLETTA', 'OTCZYK', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (93, 'MAREK', 'PURCEL', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (94, 'MIKOŁAJ', 'ZABIELSKI', 'prof');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (95, 'DAGMARA', 'KHOMYTSKA', 'dr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (96, 'MACIEJ', 'KRAWCZYK', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (97, 'TERESA', 'MŁYNARSKA', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (98, 'WADIM', 'GROCHOWSKI', 'mgr');
-INSERT INTO wykladowca (nr_wykl, imie, nazwisko, stopien) VALUES (99, 'MIROSŁAW', 'SCHÖN', 'mgr');
+0,ROBERT,MUSIK,mgr
+1,ANNA,BANASZCZYK,dr
+2,NATALIA,OLSZAK,mgr
+3,ANGELIKA,MATYSIAK,dr
+4,JUSTYNA,PIRÓG,prof
+5,IWONA,OLENDER,mgr
+6,ROBERT,PŁONKIEWICZ,dr
+7,TOMASZ,CUBER,mgr
+8,ANNA,STEINBECK,mgr
+9,MARZANNA,LEWICKA,dr
+10,ANNA,ŻUBERTOWSKA,mgr
+11,ALICJA,SKŁADOWSKA,mgr
+12,GRZEGORZ,WÓJCIAK,mgr
+13,KARINA,PICHOLA,mgr
+14,MAGDALENA,TOPOREK,prof
+15,KAZIMIERZ,KURDZIEL,prof
+16,MATYLDA,BOROWIEC,prof
+17,FRANCISZEK,KUBECZKA,prof
+18,MONIKA,KORLAGA,mgr
+19,AGNIESZKA,FIGARSKA,mgr
+20,MARTA,KMIECIK,mgr
+21,MARTA,SCHACHT,prof
+22,ALEKSANDER,MISZYCKI,dr
+23,JADWIGA,BANACH,mgr
+24,JAKUB,KOLMANN,mgr
+25,MONIKA,BEŁCIK,prof
+26,MARTA,ROSŁAN,dr
+27,NATALIA,OWCZARCZYK,mgr
+28,WOJCIECH,KREMIN,mgr
+29,BOŻENA,GAJECKA,prof

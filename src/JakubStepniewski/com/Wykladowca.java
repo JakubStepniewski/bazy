@@ -13,7 +13,7 @@ public class Wykladowca {
        String Nazwisko;
        String Stopien;
 
-       File file = new File("src/data/wykladowca.txt");
+       File file = new File("src/data/wykladowca.csv");
        PrintWriter writer = new PrintWriter(file);
        writer.print("");
 
@@ -42,7 +42,7 @@ public class Wykladowca {
            }
 
 
-           String Wynik = Insert + i + ", '" + Imie + "', '" + Nazwisko + "', '" + Stopien + "');\n";
+           String Wynik = i + "," + Imie + "," + Nazwisko + "," + Stopien + "\n";
 
            //System.out.println(Wynik);
            writer.print(Wynik);
